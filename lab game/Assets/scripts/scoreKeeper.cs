@@ -8,7 +8,7 @@ public class scoreKeeper : MonoBehaviour
 {
     [SerializeField] int score=0;
     //[SerializeField] GameObject skController;
-    public GameObject balloonPrefab;
+    //public GameObject balloonPrefab;
     [SerializeField] TextMeshProUGUI scoreTxt;
     [SerializeField] TextMeshProUGUI healthTxt;
     [SerializeField] int level;
@@ -65,7 +65,7 @@ public class scoreKeeper : MonoBehaviour
         Debug.Log("Score: " + score);
         //display score
         DisplayScore();
-        //PersistentData.Instance.SetScore(score);
+        PersistentData.Instance.SetScore(score+PersistentData.Instance.GetScore());
     }
     public void addBigBalloon(){
         score+=50; //hit big balloon and get 50 points added

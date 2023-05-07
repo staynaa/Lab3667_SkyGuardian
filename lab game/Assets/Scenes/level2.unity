@@ -914,7 +914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1244759132}
-  killzone: {fileID: 0}
+  controller: {fileID: 496747533}
   pos: {x: 0, y: 0, z: 0}
 --- !u!212 &529340147
 SpriteRenderer:
@@ -2290,6 +2290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b558e9b61d29457e9a98629e61c6a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 0}
   movement: 0
   rigid: {fileID: 0}
   isFacingRight: 1
@@ -2399,6 +2400,7 @@ MonoBehaviour:
   ArrowGFX: {fileID: 0}
   bow: {fileID: 1663308665}
   CanFire: 1
+  controller: {fileID: 496747533}
   amountShot: 0
 --- !u!114 &1244759140
 MonoBehaviour:
@@ -3094,6 +3096,10 @@ PrefabInstance:
       propertyPath: bound2
       value: 
       objectReference: {fileID: 567657897}
+    - target: {fileID: 2604842807585184669, guid: 913fe66845d6c4ab5bfb2c1a39bb8598, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 496747533}
     - target: {fileID: 8308329142657445274, guid: 913fe66845d6c4ab5bfb2c1a39bb8598, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3291,7 +3297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2124628177
 SpriteRenderer:
   m_ObjectHideFlags: 0

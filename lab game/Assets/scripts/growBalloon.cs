@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class growBalloon : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class growBalloon : MonoBehaviour
     private int direction = 1;
     private float timeBetweenDoingSomething = 1f;  //Wait 5 seconds after we do something to do something again
     private float timeWhenWeNextDoSomething;  //The next time we do something
-    private const int requiredHit=10;
+    private const int requiredHit=15;
     public int count=0;
     void Start()
     {
@@ -30,7 +31,10 @@ public class growBalloon : MonoBehaviour
             transform.localScale+= new Vector3(1,1,0);
             timeWhenWeNextDoSomething = Time.time + timeBetweenDoingSomething;
         }
-        if(transform.localScale.x==50) Destroy(bigBalloon);
+        if(transform.localScale.x==50){
+            Destroy(bigBalloon);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     } 
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -40,6 +44,7 @@ public class growBalloon : MonoBehaviour
             // scoreKeeper.Instance.playerRowHits();
             controller.GetComponent<scoreKeeper>().addHit();
             controller.GetComponent<scoreKeeper>().playerRowHits();
+            controller.GetComponent<scoreKeeper>().UpdateScore();
 
             AudioSource.PlayClipAtPoint(src.clip, transform.position);
             

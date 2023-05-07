@@ -44,7 +44,7 @@ public class ScenesManager : MonoBehaviour
     public void LoadMainMenu(){
         SceneManager.LoadScene(Scene.startMenu.ToString());
     }
-    // public void ReloadLevel(){
-    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    // }
+    public void ReloadLevel(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

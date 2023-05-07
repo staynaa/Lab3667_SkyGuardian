@@ -61,8 +61,8 @@ public class highscore : MonoBehaviour
     {
         for (int i = 0; i <  NUM_HIGH_SCORES; i++)
         {
-            nameTxts[i].text = PlayerPrefs.GetString(NAME_KEY + (i+1));
-            scoreTxts[i].text = PlayerPrefs.GetInt(SCORE_KEY + (i+1)).ToString();
+            nameTxts[i].SetText(PlayerPrefs.GetString(NAME_KEY + (i+1)));
+            scoreTxts[i].SetText(PlayerPrefs.GetInt(SCORE_KEY + (i+1)).ToString());
         }
 
     }

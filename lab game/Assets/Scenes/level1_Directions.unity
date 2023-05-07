@@ -902,13 +902,12 @@ MonoBehaviour:
   m_text: 'In this level, you must destroy the red balloon before it grows too large.
     Doing so will increase your score by 50 points.
 
-    Shoot the yellow balloons
-    to increase the strength of your arrows to destroy the red balloon faster. Shooting
-    the yellow balloons will also increase your score greatly.
+    If you continuosly hit without
+    missing, you will gain even more points, but if you miss a shot, you go back
+    to only scoring 1 point per hit.
 
 
-    If you fall
-    down, you lose a life.'
+    If you fall down, you lose a life.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
