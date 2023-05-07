@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 11f7c90d90057412ca63b90c32265cc4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - fibberish
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 260764dd8aab0430583dc4b7b5333b3e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
